@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen bg-gray-50">
+      <body className="flex flex-col min-h-screen bg-coconut-50" suppressHydrationWarning>
         <WishlistProvider>
           <CartProvider>
             <Header />

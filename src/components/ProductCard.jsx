@@ -32,20 +32,20 @@ export default function ProductCard({ product }) {
     const rating = product.rating;
     for (let i = 1; i <= 5; i++) {
       if (i <= rating) {
-        stars.push(<Star key={i} className="h-4 w-4 text-saffron-500 fill-saffron-500" />);
+        stars.push(<Star key={i} className="h-4 w-4 text-saffron-600 fill-saffron-600" />);
       } else {
-        stars.push(<Star key={i} className="h-4 w-4 text-coconut-300" />);
+        stars.push(<Star key={i} className="h-4 w-4 text-coconut-400" />);
       }
     }
     return stars;
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-artisan-lg overflow-hidden card-hover-lift group flex flex-col border-2 border-coconut-200 hover:border-clay-300 transition-all duration-300">
+    <div className="bg-white rounded-2xl shadow-artisan-lg overflow-hidden card-hover-lift group flex flex-col border border-clay-300 hover:border-clay-500 transition-all duration-300">
       <Link href={`/products/${product.id}`} className="block flex flex-col flex-grow">
         <div className="relative h-64 overflow-hidden bg-coconut-100">
           {/* Handmade badge */}
-          <div className="absolute top-3 left-3 bg-gradient-to-r from-clay-500 to-clay-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-10 flex items-center gap-1">
+          <div className="absolute top-3 left-3 bg-gradient-to-r from-clay-700 to-clay-800 text-coconut-50 text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-10 flex items-center gap-1">
             <Sparkles className="h-3 w-3" />
             Handmade
           </div>
@@ -58,10 +58,10 @@ export default function ProductCard({ product }) {
 
           <button
             onClick={handleToggleWishlist}
-            className="absolute top-3 right-3 p-2.5 bg-white/95 backdrop-blur-sm rounded-full shadow-artisan hover:bg-clay-50 transition-all duration-300 z-10 hover:scale-110"
+            className="absolute top-3 right-3 p-2.5 bg-white/95 backdrop-blur-sm rounded-full shadow-artisan hover:bg-clay-100 transition-all duration-300 z-10 hover:scale-110"
           >
             <Heart
-              className={`h-5 w-5 transition-all ${isProductInWishlist ? 'text-clay-500 fill-clay-500 scale-110' : 'text-coconut-600'}`}
+              className={`h-5 w-5 transition-all ${isProductInWishlist ? 'text-clay-700 fill-clay-700 scale-110' : 'text-coconut-700'}`}
             />
           </button>
 
@@ -93,7 +93,7 @@ export default function ProductCard({ product }) {
           <div className="mt-auto">
              <button
               onClick={handleAddToCart}
-              className="w-full bg-gradient-to-r from-clay-600 to-clay-700 hover:from-clay-700 hover:to-clay-800 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-artisan hover:shadow-artisan-lg btn-artisan"
+              className="w-full bg-gradient-to-r from-clay-700 to-clay-800 hover:from-clay-800 hover:to-clay-900 text-coconut-50 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-artisan hover:shadow-artisan-lg btn-artisan"
             >
               <ShoppingCart className="h-5 w-5" />
               Add to Cart

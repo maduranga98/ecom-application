@@ -4,28 +4,28 @@
     --font-family-sans: var(--font-geist-sans);
     --font-family-mono: var(--font-geist-mono);
 
-    /* Sri Lankan Artisan Color Palette */
-    --color-clay-50: #fdf8f6;
-    --color-clay-100: #f8e8dc;
-    --color-clay-200: #f0cfbb;
-    --color-clay-300: #e5ae8d;
-    --color-clay-400: #d98b5f;
-    --color-clay-500: #c66d3f;
-    --color-clay-600: #a85634;
-    --color-clay-700: #8a432d;
-    --color-clay-800: #6e3726;
-    --color-clay-900: #583021;
+    /* Sri Lankan Artisan Color Palette - Vintage & Classical */
+    --color-clay-50: #faf6f3;
+    --color-clay-100: #f4ebe4;
+    --color-clay-200: #e8d5c6;
+    --color-clay-300: #d4b49a;
+    --color-clay-400: #bc8a68;
+    --color-clay-500: #a66f4d;
+    --color-clay-600: #8b5a3c;
+    --color-clay-700: #704832;
+    --color-clay-800: #5a3a2b;
+    --color-clay-900: #473026;
 
-    --color-coconut-50: #faf9f7;
-    --color-coconut-100: #f0ede8;
-    --color-coconut-200: #ddd5c7;
-    --color-coconut-300: #c5b59a;
-    --color-coconut-400: #a89172;
-    --color-coconut-500: #8b7355;
-    --color-coconut-600: #6e5a42;
-    --color-coconut-700: #584738;
-    --color-coconut-800: #463830;
-    --color-coconut-900: #392e27;
+    --color-coconut-50: #fdfcfb;
+    --color-coconut-100: #f7f5f2;
+    --color-coconut-200: #ede8e1;
+    --color-coconut-300: #ddd4c8;
+    --color-coconut-400: #c4b5a4;
+    --color-coconut-500: #a89886;
+    --color-coconut-600: #8a7b6b;
+    --color-coconut-700: #6d6055;
+    --color-coconut-800: #564d44;
+    --color-coconut-900: #3e3730;
 
     --color-wood-50: #faf7f3;
     --color-wood-100: #ebe2d4;
@@ -38,27 +38,34 @@
     --color-wood-800: #3f3120;
     --color-wood-900: #33281b;
 
-    --color-tropical-50: #f0fdf4;
-    --color-tropical-100: #dcfce7;
-    --color-tropical-200: #a7f3d0;
-    --color-tropical-300: #6ee7b7;
-    --color-tropical-400: #34d399;
-    --color-tropical-500: #10b981;
-    --color-tropical-600: #059669;
-    --color-tropical-700: #047857;
-    --color-tropical-800: #065f46;
-    --color-tropical-900: #064e3b;
+    --color-tropical-50: #f2faf5;
+    --color-tropical-100: #e0f4e7;
+    --color-tropical-200: #b8e6c9;
+    --color-tropical-300: #8bd4a7;
+    --color-tropical-400: #5dbe87;
+    --color-tropical-500: #3da269;
+    --color-tropical-600: #2f8355;
+    --color-tropical-700: #256844;
+    --color-tropical-800: #1d5137;
+    --color-tropical-900: #17422e;
 
-    --color-saffron-50: #fffbeb;
-    --color-saffron-100: #fef3c7;
-    --color-saffron-200: #fde68a;
-    --color-saffron-300: #fcd34d;
-    --color-saffron-400: #fbbf24;
-    --color-saffron-500: #f59e0b;
-    --color-saffron-600: #d97706;
-    --color-saffron-700: #b45309;
-    --color-saffron-800: #92400e;
-    --color-saffron-900: #78350f;
+    --color-saffron-50: #fdfaf5;
+    --color-saffron-100: #fbf3e6;
+    --color-saffron-200: #f5e4c5;
+    --color-saffron-300: #eacd98;
+    --color-saffron-400: #ddb16a;
+    --color-saffron-500: #ce9647;
+    --color-saffron-600: #b67c35;
+    --color-saffron-700: #96642b;
+    --color-saffron-800: #785024;
+    --color-saffron-900: #61421e;
+
+    /* Vintage accent colors */
+    --color-vintage-cream: #f9f6f1;
+    --color-vintage-gold: #d4af37;
+    --color-vintage-bronze: #8c6239;
+    --color-vintage-burgundy: #800020;
+    --color-vintage-navy: #2c3e50;
 }
 
 @keyframes fadeInDown {
