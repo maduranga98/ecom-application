@@ -4,7 +4,24 @@
     --font-family-sans: var(--font-geist-sans);
     --font-family-mono: var(--font-geist-mono);
 
-    /* Sri Lankan Artisan Color Palette - Vintage & Classical */
+    /* Light Beige + White + Black Color Palette - Handmade Feel */
+    /* Main Color: Light Beige */
+    --color-beige-50: #fefdfb;
+    --color-beige-100: #faf8f3;
+    --color-beige-200: #f5f0e8;
+    --color-beige-300: #ebe4d6;
+    --color-beige-400: #ddd3c0;
+    --color-beige-500: #cdc0a8;  /* Main light beige */
+    --color-beige-600: #b8aa91;
+    --color-beige-700: #a39478;
+    --color-beige-800: #847760;
+    --color-beige-900: #6b614e;
+
+    /* Accent Colors */
+    --color-black: #1a1a1a;
+    --color-black-light: #2d2d2d;
+    --color-black-lighter: #404040;
+
     --color-clay-50: #faf6f3;
     --color-clay-100: #f4ebe4;
     --color-clay-200: #e8d5c6;

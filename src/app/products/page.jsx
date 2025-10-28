@@ -22,22 +22,22 @@ export default function ProductsPage() {
     : products.filter(product => product.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-coconut-50 to-clay-50">
+    <div className="min-h-screen bg-beige-200 canvas-texture">
       {/* Hero Banner */}
-      <section className="relative bg-gradient-to-r from-clay-700 via-clay-600 to-wood-700 text-white py-16 pattern-dots">
+      <section className="relative bg-black text-white py-16 pattern-dots">
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="inline-block mb-4 px-4 py-1.5 bg-saffron-500/90 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider">
+          <div className="inline-block mb-4 px-4 py-1.5 bg-beige-300 text-black backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider border-2 border-black shadow-handmade">
             <Sparkles className="inline h-3 w-3 mr-1" />
             Handcrafted Collection
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             Discover Our Crafts
           </h1>
-          <p className="text-xl text-coconut-100 max-w-2xl mx-auto">
+          <p className="text-xl text-beige-200 max-w-2xl mx-auto">
             Explore our curated collection of authentic Sri Lankan handmade products
           </p>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-coconut-50 to-transparent opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-beige-200/20 to-transparent"></div>
       </section>
 
       <div className="container mx-auto px-4 py-12">
@@ -45,24 +45,24 @@ export default function ProductsPage() {
         <div className="mb-10">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-8">
             <div>
-              <h2 className="text-3xl font-bold text-gradient-clay mb-2">
+              <h2 className="text-3xl font-bold text-black mb-2">
                 Shop by Category
               </h2>
-              <p className="text-coconut-600">
+              <p className="text-black-light">
                 {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'} found
               </p>
             </div>
 
             {/* View Toggle */}
             <div className="flex items-center gap-4">
-              <span className="text-sm font-semibold text-coconut-700">View:</span>
-              <div className="flex gap-2 bg-white rounded-lg p-1 shadow-artisan border-2 border-coconut-200">
+              <span className="text-sm font-semibold text-black">View:</span>
+              <div className="flex gap-2 bg-white rounded-lg p-1 shadow-handmade border-2 border-black">
                 <button
                   onClick={() => setViewMode('grid')}
                   className={`p-2 rounded-md transition-all ${
                     viewMode === 'grid'
-                      ? 'bg-clay-600 text-white'
-                      : 'text-coconut-600 hover:bg-coconut-100'
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-beige-200'
                   }`}
                 >
                   <Grid className="h-5 w-5" />
@@ -71,8 +71,8 @@ export default function ProductsPage() {
                   onClick={() => setViewMode('list')}
                   className={`p-2 rounded-md transition-all ${
                     viewMode === 'list'
-                      ? 'bg-clay-600 text-white'
-                      : 'text-coconut-600 hover:bg-coconut-100'
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-beige-200'
                   }`}
                 >
                   <List className="h-5 w-5" />
@@ -87,10 +87,10 @@ export default function ProductsPage() {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 border-2 ${
+                className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 border-2 shadow-handmade ${
                   selectedCategory === category.id
-                    ? 'bg-gradient-to-r from-clay-600 to-clay-700 text-white border-clay-700 shadow-artisan-lg scale-105'
-                    : 'bg-white text-coconut-800 border-coconut-300 hover:border-clay-400 hover:shadow-artisan'
+                    ? 'bg-black text-white border-black scale-105'
+                    : 'bg-beige-100 text-black border-black hover:bg-beige-300'
                 }`}
               >
                 <span className="mr-2">{category.icon}</span>
@@ -119,12 +119,12 @@ export default function ProductsPage() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <div className="inline-block p-8 bg-white rounded-2xl shadow-artisan-lg border-2 border-coconut-200">
-              <Filter className="h-16 w-16 text-coconut-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-coconut-900 mb-2">
+            <div className="inline-block p-8 bg-white rounded-2xl shadow-handmade-lg border-2 border-black">
+              <Filter className="h-16 w-16 text-black-lighter mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-black mb-2">
                 No products found
               </h3>
-              <p className="text-coconut-600">
+              <p className="text-black-light">
                 Try selecting a different category
               </p>
             </div>
