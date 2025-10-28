@@ -22,22 +22,22 @@ export default function ProductsPage() {
     : products.filter(product => product.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-beige-200 canvas-texture">
+    <div className="min-h-screen canvas-texture" style={{backgroundColor: '#BA9256'}}>
       {/* Hero Banner */}
       <section className="relative bg-black text-white py-16 pattern-dots">
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="inline-block mb-4 px-4 py-1.5 bg-beige-300 text-black backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider border-2 border-black shadow-handmade">
+          <div className="inline-block mb-4 px-4 py-1.5 text-black backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider border-2 border-white shadow-handmade" style={{backgroundColor: '#BA9256'}}>
             <Sparkles className="inline h-3 w-3 mr-1" />
             Handcrafted Collection
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             Discover Our Crafts
           </h1>
-          <p className="text-xl text-beige-200 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Explore our curated collection of authentic Sri Lankan handmade products
           </p>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-beige-200/20 to-transparent"></div>
+        <div className="absolute inset-0" style={{background: 'linear-gradient(to top, rgba(186, 146, 86, 0.2), transparent)'}}></div>
       </section>
 
       <div className="container mx-auto px-4 py-12">
@@ -62,7 +62,7 @@ export default function ProductsPage() {
                   className={`p-2 rounded-md transition-all ${
                     viewMode === 'grid'
                       ? 'bg-black text-white'
-                      : 'text-black hover:bg-beige-200'
+                      : 'text-black hover:bg-white/20'
                   }`}
                 >
                   <Grid className="h-5 w-5" />
@@ -72,7 +72,7 @@ export default function ProductsPage() {
                   className={`p-2 rounded-md transition-all ${
                     viewMode === 'list'
                       ? 'bg-black text-white'
-                      : 'text-black hover:bg-beige-200'
+                      : 'text-black hover:bg-white/20'
                   }`}
                 >
                   <List className="h-5 w-5" />
@@ -90,7 +90,7 @@ export default function ProductsPage() {
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 border-2 shadow-handmade ${
                   selectedCategory === category.id
                     ? 'bg-black text-white border-black scale-105'
-                    : 'bg-beige-100 text-black border-black hover:bg-beige-300'
+                    : 'bg-white text-black border-black hover:bg-white/80'
                 }`}
               >
                 <span className="mr-2">{category.icon}</span>

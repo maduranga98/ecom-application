@@ -4,6 +4,12 @@
     --font-family-sans: var(--font-geist-sans);
     --font-family-mono: var(--font-geist-mono);
 
+    /* #BA9256 Background + White + Black Color Palette */
+    /* Main Background Color: #BA9256 */
+    --color-primary-bg: #BA9256;
+    --color-primary-bg-light: #c9a36d;
+    --color-primary-bg-dark: #a8834c;
+
     /* Light Beige + White + Black Color Palette - Handmade Feel */
     /* Main Color: Light Beige */
     --color-beige-50: #fefdfb;

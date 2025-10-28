@@ -14,7 +14,7 @@ export default function Header() {
   const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <header className="bg-beige-100 backdrop-blur-lg sticky top-0 z-50 border-b-2 border-black shadow-handmade">
+    <header className="backdrop-blur-lg sticky top-0 z-50 border-b-2 border-black shadow-handmade" style={{backgroundColor: '#BA9256'}}>
       {/* Top announcement bar */}
       <div className="bg-black text-white text-center py-2.5 px-4 text-sm font-medium tracking-wide">
         <Sparkles className="inline h-4 w-4 mr-2" />
@@ -64,7 +64,7 @@ export default function Header() {
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-black" />
             </div>
 
-          <Link href="/wishlist" className="relative p-2 rounded-full hover:bg-beige-300 transition-all duration-300 group">
+          <Link href="/wishlist" className="relative p-2 rounded-full hover:bg-white/20 transition-all duration-300 group">
             <Heart className="h-6 w-6 text-black group-hover:text-black-lighter transition-colors" />
             {wishlist.length > 0 && (
               <span className="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full h-5 w-5 flex items-center justify-center shadow-lg animate-pulse font-bold">
@@ -72,7 +72,7 @@ export default function Header() {
               </span>
             )}
           </Link>
-          <Link href="/cart" className="relative p-2 rounded-full hover:bg-beige-300 transition-all duration-300 group">
+          <Link href="/cart" className="relative p-2 rounded-full hover:bg-white/20 transition-all duration-300 group">
             <ShoppingCart className="h-6 w-6 text-black group-hover:text-black-lighter transition-colors" />
             {cartItemCount > 0 && (
               <span className="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full h-5 w-5 flex items-center justify-center shadow-lg font-bold">
@@ -83,7 +83,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md hover:bg-beige-300 transition-colors">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md hover:bg-white/20 transition-colors">
               {isMenuOpen ? <X className="h-6 w-6 text-black" /> : <Menu className="h-6 w-6 text-black" />}
             </button>
           </div>
@@ -92,11 +92,11 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-beige-100 backdrop-blur-lg pb-4 px-4 space-y-2 border-t-2 border-black">
-            <Link href="/" className="block text-black hover:bg-beige-300 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>Home</Link>
-            <Link href="/products" className="block text-black hover:bg-beige-300 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>Products</Link>
-            <Link href="/about" className="block text-black hover:bg-beige-300 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>About</Link>
-            <Link href="/contact" className="block text-black hover:bg-beige-300 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+        <div className="md:hidden backdrop-blur-lg pb-4 px-4 space-y-2 border-t-2 border-black" style={{backgroundColor: '#BA9256'}}>
+            <Link href="/" className="block text-black hover:bg-white/20 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>Home</Link>
+            <Link href="/products" className="block text-black hover:bg-white/20 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>Products</Link>
+            <Link href="/about" className="block text-black hover:bg-white/20 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>About</Link>
+            <Link href="/contact" className="block text-black hover:bg-white/20 py-3 px-4 rounded-lg font-semibold transition-all" onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <div className="relative pt-2">
                 <input
                 type="text"
