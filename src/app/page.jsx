@@ -79,7 +79,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-beige-200 canvas-texture">
+    <div style={{backgroundColor: '#BA9256'}} className="canvas-texture">
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center min-h-[700px] text-white"
@@ -93,13 +93,13 @@ export default function Home() {
 
         <div className="relative container mx-auto px-4 h-full min-h-[700px] flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
-            <div className="inline-block mb-6 px-6 py-2 bg-beige-500 backdrop-blur-sm rounded-full text-sm font-bold uppercase tracking-wider animate-fade-in-down text-black border-2 border-black shadow-handmade">
+            <div className="inline-block mb-6 px-6 py-2 backdrop-blur-sm rounded-full text-sm font-bold uppercase tracking-wider animate-fade-in-down text-black border-2 border-white shadow-handmade" style={{backgroundColor: '#BA9256'}}>
               Authentic Sri Lankan Craftsmanship
             </div>
 
             <h1 className="text-6xl md:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-down drop-shadow-lg">
               Discover the Art of
-              <span className="block text-beige-300 mt-2">Handmade Ceylon</span>
+              <span className="block mt-2" style={{color: '#BA9256'}}>Handmade Ceylon</span>
             </h1>
 
             <p className="text-xl md:text-2xl font-light mb-10 text-white max-w-2xl mx-auto animate-fade-in-up drop-shadow-md">
@@ -115,7 +115,8 @@ export default function Home() {
               </Link>
               <Link
                 href="/about"
-                className="bg-beige-300 border-2 border-black hover:bg-beige-400 text-black font-bold py-4 px-10 rounded-full transition-all duration-300 text-lg shadow-handmade"
+                className="border-2 border-white text-black font-bold py-4 px-10 rounded-full transition-all duration-300 text-lg shadow-handmade hover:bg-white/10"
+                style={{backgroundColor: '#BA9256'}}
               >
                 Our Story
               </Link>
@@ -132,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-20 bg-beige-100 canvas-texture relative">
+      <section className="py-20 bg-white canvas-texture relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="text-black font-semibold uppercase tracking-wider text-sm">Curated Selection</span>
@@ -197,8 +198,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="flex flex-col items-center text-center bg-beige-100 rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
-              <div className="bg-beige-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black">
+            <div className="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
+              <div className="p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black" style={{backgroundColor: '#BA9256'}}>
                 <Shield size={48} className="text-black" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-3">
@@ -209,8 +210,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center bg-beige-100 rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
-              <div className="bg-beige-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black">
+            <div className="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
+              <div className="p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black" style={{backgroundColor: '#BA9256'}}>
                 <Gift size={48} className="text-black" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-3">
@@ -221,8 +222,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center bg-beige-100 rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
-              <div className="bg-beige-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black">
+            <div className="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
+              <div className="p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black" style={{backgroundColor: '#BA9256'}}>
                 <Truck size={48} className="text-black" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-3">
@@ -237,7 +238,7 @@ export default function Home() {
       </section>
 
       {/* Shop by Category Section */}
-      <section className="py-20 bg-beige-200 relative canvas-texture">
+      <section className="py-20 relative canvas-texture" style={{backgroundColor: '#BA9256'}}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="text-black font-semibold uppercase tracking-wider text-sm">Explore Collections</span>
@@ -269,14 +270,14 @@ export default function Home() {
                       <h3 className="text-3xl font-extrabold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
                         {category.name}
                       </h3>
-                      <p className="text-beige-200 text-sm font-medium mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-md">
+                      <p className="text-white text-sm font-medium mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-md">
                         {category.description}
                       </p>
-                      <div className="w-16 h-1 bg-beige-300 rounded-full group-hover:w-24 transition-all duration-300"></div>
+                      <div className="w-16 h-1 rounded-full group-hover:w-24 transition-all duration-300" style={{backgroundColor: '#BA9256'}}></div>
                     </div>
 
                     {/* Corner decoration */}
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-beige-300/30 to-transparent rounded-bl-3xl"></div>
+                    <div className="absolute top-0 right-0 w-20 h-20 rounded-bl-3xl" style={{background: 'linear-gradient(to bottom left, rgba(186, 146, 86, 0.3), transparent)'}}></div>
                   </div>
                 </div>
               </Link>
@@ -303,10 +304,10 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-beige-100 p-8 rounded-2xl shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group relative overflow-hidden"
+                className="bg-white p-8 rounded-2xl shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group relative overflow-hidden"
               >
                 {/* Decorative quote mark */}
-                <div className="absolute top-4 right-4 text-8xl text-beige-300 font-serif leading-none">"</div>
+                <div className="absolute top-4 right-4 text-8xl font-serif leading-none" style={{color: '#BA9256'}}>"</div>
 
                 <div className="relative z-10">
                   <div className="flex justify-center mb-6">

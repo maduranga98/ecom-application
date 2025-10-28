@@ -43,7 +43,7 @@ export default function ProductCard({ product }) {
   return (
     <div className="bg-white rounded-2xl shadow-handmade-lg overflow-hidden card-hover-lift group flex flex-col border-2 border-black hover:border-black-lighter transition-all duration-300">
       <Link href={`/products/${product.id}`} className="block flex flex-col flex-grow">
-        <div className="relative h-64 overflow-hidden bg-beige-100">
+        <div className="relative h-64 overflow-hidden" style={{backgroundColor: '#BA9256'}}>
           {/* Handmade badge */}
           <div className="absolute top-3 left-3 bg-black text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-10 flex items-center gap-1 border-2 border-white">
             <Sparkles className="h-3 w-3" />
@@ -58,7 +58,7 @@ export default function ProductCard({ product }) {
 
           <button
             onClick={handleToggleWishlist}
-            className="absolute top-3 right-3 p-2.5 bg-beige-100/95 backdrop-blur-sm rounded-full shadow-handmade hover:bg-beige-200 transition-all duration-300 z-10 hover:scale-110 border-2 border-black"
+            className="absolute top-3 right-3 p-2.5 bg-white/95 backdrop-blur-sm rounded-full shadow-handmade hover:bg-white transition-all duration-300 z-10 hover:scale-110 border-2 border-black"
           >
             <Heart
               className={`h-5 w-5 transition-all ${isProductInWishlist ? 'text-black fill-black scale-110' : 'text-black'}`}
@@ -66,10 +66,10 @@ export default function ProductCard({ product }) {
           </button>
 
           {/* Decorative corner accent */}
-          <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-beige-300/30 to-transparent"></div>
+          <div className="absolute bottom-0 right-0 w-16 h-16" style={{background: 'linear-gradient(to top left, rgba(186, 146, 86, 0.3), transparent)'}}></div>
         </div>
 
-        <div className="p-5 flex flex-col flex-grow bg-gradient-to-b from-white to-beige-50">
+        <div className="p-5 flex flex-col flex-grow bg-white">
           <h3 className="text-lg font-bold text-black mb-2 line-clamp-2 group-hover:text-black-lighter transition-colors">
             {product.name}
           </h3>
