@@ -3,6 +3,62 @@
 @theme {
     --font-family-sans: var(--font-geist-sans);
     --font-family-mono: var(--font-geist-mono);
+
+    /* Sri Lankan Artisan Color Palette */
+    --color-clay-50: #fdf8f6;
+    --color-clay-100: #f8e8dc;
+    --color-clay-200: #f0cfbb;
+    --color-clay-300: #e5ae8d;
+    --color-clay-400: #d98b5f;
+    --color-clay-500: #c66d3f;
+    --color-clay-600: #a85634;
+    --color-clay-700: #8a432d;
+    --color-clay-800: #6e3726;
+    --color-clay-900: #583021;
+
+    --color-coconut-50: #faf9f7;
+    --color-coconut-100: #f0ede8;
+    --color-coconut-200: #ddd5c7;
+    --color-coconut-300: #c5b59a;
+    --color-coconut-400: #a89172;
+    --color-coconut-500: #8b7355;
+    --color-coconut-600: #6e5a42;
+    --color-coconut-700: #584738;
+    --color-coconut-800: #463830;
+    --color-coconut-900: #392e27;
+
+    --color-wood-50: #faf7f3;
+    --color-wood-100: #ebe2d4;
+    --color-wood-200: #d6c4a9;
+    --color-wood-300: #ba9f77;
+    --color-wood-400: #9d7d4f;
+    --color-wood-500: #7f6239;
+    --color-wood-600: #644d2e;
+    --color-wood-700: #4f3d26;
+    --color-wood-800: #3f3120;
+    --color-wood-900: #33281b;
+
+    --color-tropical-50: #f0fdf4;
+    --color-tropical-100: #dcfce7;
+    --color-tropical-200: #a7f3d0;
+    --color-tropical-300: #6ee7b7;
+    --color-tropical-400: #34d399;
+    --color-tropical-500: #10b981;
+    --color-tropical-600: #059669;
+    --color-tropical-700: #047857;
+    --color-tropical-800: #065f46;
+    --color-tropical-900: #064e3b;
+
+    --color-saffron-50: #fffbeb;
+    --color-saffron-100: #fef3c7;
+    --color-saffron-200: #fde68a;
+    --color-saffron-300: #fcd34d;
+    --color-saffron-400: #fbbf24;
+    --color-saffron-500: #f59e0b;
+    --color-saffron-600: #d97706;
+    --color-saffron-700: #b45309;
+    --color-saffron-800: #92400e;
+    --color-saffron-900: #78350f;
 }
 
 @keyframes fadeInDown {
@@ -26,5 +82,47 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
