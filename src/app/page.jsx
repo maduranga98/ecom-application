@@ -79,7 +79,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-coconut-50">
+    <div className="bg-beige-200 canvas-texture">
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center min-h-[700px] text-white"
@@ -88,34 +88,34 @@ export default function Home() {
             "url('https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-clay-900/85 via-wood-800/80 to-coconut-900/85"></div>
-        <div className="absolute inset-0 pattern-vintage opacity-30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-black-light/75"></div>
+        <div className="absolute inset-0 pattern-vintage opacity-20"></div>
 
         <div className="relative container mx-auto px-4 h-full min-h-[700px] flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
-            <div className="inline-block mb-6 px-6 py-2 bg-saffron-600/90 backdrop-blur-sm rounded-full text-sm font-bold uppercase tracking-wider animate-fade-in-down text-coconut-50 border border-saffron-400/30">
+            <div className="inline-block mb-6 px-6 py-2 bg-beige-500 backdrop-blur-sm rounded-full text-sm font-bold uppercase tracking-wider animate-fade-in-down text-black border-2 border-black shadow-handmade">
               Authentic Sri Lankan Craftsmanship
             </div>
 
             <h1 className="text-6xl md:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-down drop-shadow-lg">
               Discover the Art of
-              <span className="block text-saffron-400 mt-2">Handmade Ceylon</span>
+              <span className="block text-beige-300 mt-2">Handmade Ceylon</span>
             </h1>
 
-            <p className="text-xl md:text-2xl font-light mb-10 text-coconut-100 max-w-2xl mx-auto animate-fade-in-up drop-shadow-md">
+            <p className="text-xl md:text-2xl font-light mb-10 text-white max-w-2xl mx-auto animate-fade-in-up drop-shadow-md">
               Each piece tells a story of tradition, passion, and the skilled hands of Sri Lankan artisans
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up">
               <Link
                 href="/products"
-                className="bg-gradient-to-r from-clay-700 to-clay-800 hover:from-clay-800 hover:to-clay-900 text-coconut-50 font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-artisan-xl btn-artisan text-lg border border-clay-600"
+                className="bg-black hover:bg-black-light text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-handmade-lg text-lg border-2 border-white"
               >
                 Explore Collection
               </Link>
               <Link
                 href="/about"
-                className="bg-white/10 backdrop-blur-sm border-2 border-white/40 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 text-lg hover:border-white/60"
+                className="bg-beige-300 border-2 border-black hover:bg-beige-400 text-black font-bold py-4 px-10 rounded-full transition-all duration-300 text-lg shadow-handmade"
               >
                 Our Story
               </Link>
@@ -132,14 +132,14 @@ export default function Home() {
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-20 bg-white pattern-vintage relative">
+      <section className="py-20 bg-beige-100 canvas-texture relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <span className="text-clay-700 font-semibold uppercase tracking-wider text-sm">Curated Selection</span>
-            <h2 className="text-5xl font-extrabold text-gradient-warm mt-2 mb-4">
+            <span className="text-black font-semibold uppercase tracking-wider text-sm">Curated Selection</span>
+            <h2 className="text-5xl font-extrabold text-black mt-2 mb-4">
               Featured Handcrafts
             </h2>
-            <p className="text-coconut-800 text-lg max-w-2xl mx-auto">
+            <p className="text-black-light text-lg max-w-2xl mx-auto">
               Discover our handpicked selection of authentic Sri Lankan artisan pieces
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function Home() {
               {[...Array(4)].map((_, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl shadow-artisan-lg overflow-hidden border border-clay-300"
+                  className="bg-white rounded-2xl shadow-handmade-lg overflow-hidden border-2 border-black"
                 >
                   <div className="h-64 skeleton-artisan"></div>
                   <div className="p-5">
@@ -169,7 +169,7 @@ export default function Home() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-coconut-600 text-lg">
+            <p className="text-center text-black-light text-lg">
               No featured products available at the moment.
             </p>
           )}
@@ -177,7 +177,7 @@ export default function Home() {
           <div className="text-center mt-16">
             <Link
               href="/products"
-              className="inline-block bg-gradient-to-r from-clay-700 to-clay-800 hover:from-clay-800 hover:to-clay-900 text-coconut-50 font-bold py-4 px-10 rounded-full transition-all duration-300 shadow-artisan-lg hover:shadow-artisan-xl transform hover:scale-105 btn-artisan border border-clay-600"
+              className="inline-block bg-black hover:bg-black-light text-white font-bold py-4 px-10 rounded-full transition-all duration-300 shadow-handmade-lg transform hover:scale-105 border-2 border-black"
             >
               View All Products
             </Link>
@@ -186,49 +186,49 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gradient-to-br from-coconut-100 to-clay-100 relative overflow-hidden">
-        <div className="absolute inset-0 pattern-vintage opacity-20"></div>
+      <section className="py-20 bg-white relative overflow-hidden canvas-texture">
+        <div className="absolute inset-0 pattern-vintage opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <span className="text-clay-700 font-semibold uppercase tracking-wider text-sm">Our Promise</span>
-            <h2 className="text-5xl font-extrabold text-gradient-clay mt-2 mb-4">
+            <span className="text-black font-semibold uppercase tracking-wider text-sm">Our Promise</span>
+            <h2 className="text-5xl font-extrabold text-black mt-2 mb-4">
               Why Ceylon Crafts?
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="flex flex-col items-center text-center bg-coconut-50 rounded-2xl p-8 shadow-artisan-lg hover:shadow-artisan-xl transition-all duration-300 border border-clay-300 hover:border-clay-500 group">
-              <div className="bg-gradient-to-br from-clay-200 to-clay-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-clay-400/30">
-                <Shield size={48} className="text-clay-800" />
+            <div className="flex flex-col items-center text-center bg-beige-100 rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
+              <div className="bg-beige-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black">
+                <Shield size={48} className="text-black" />
               </div>
-              <h3 className="text-2xl font-bold text-coconut-900 mb-3">
+              <h3 className="text-2xl font-bold text-black mb-3">
                 Authentic Craftsmanship
               </h3>
-              <p className="text-coconut-800 leading-relaxed">
+              <p className="text-black-light leading-relaxed">
                 Every piece is handcrafted by skilled Sri Lankan artisans using traditional techniques passed down through generations.
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center bg-coconut-50 rounded-2xl p-8 shadow-artisan-lg hover:shadow-artisan-xl transition-all duration-300 border border-clay-300 hover:border-clay-500 group">
-              <div className="bg-gradient-to-br from-tropical-200 to-tropical-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-tropical-400/30">
-                <Gift size={48} className="text-tropical-800" />
+            <div className="flex flex-col items-center text-center bg-beige-100 rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
+              <div className="bg-beige-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black">
+                <Gift size={48} className="text-black" />
               </div>
-              <h3 className="text-2xl font-bold text-coconut-900 mb-3">
+              <h3 className="text-2xl font-bold text-black mb-3">
                 One-of-a-Kind Pieces
               </h3>
-              <p className="text-coconut-800 leading-relaxed">
+              <p className="text-black-light leading-relaxed">
                 Each item is unique with its own character, making them perfect as meaningful gifts or cherished home additions.
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center bg-coconut-50 rounded-2xl p-8 shadow-artisan-lg hover:shadow-artisan-xl transition-all duration-300 border border-clay-300 hover:border-clay-500 group">
-              <div className="bg-gradient-to-br from-saffron-200 to-saffron-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-saffron-400/30">
-                <Truck size={48} className="text-saffron-800" />
+            <div className="flex flex-col items-center text-center bg-beige-100 rounded-2xl p-8 shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group">
+              <div className="bg-beige-300 p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-black">
+                <Truck size={48} className="text-black" />
               </div>
-              <h3 className="text-2xl font-bold text-coconut-900 mb-3">
+              <h3 className="text-2xl font-bold text-black mb-3">
                 Worldwide Delivery
               </h3>
-              <p className="text-coconut-800 leading-relaxed">
+              <p className="text-black-light leading-relaxed">
                 We carefully package and ship your handmade treasures worldwide, ensuring they arrive safely at your doorstep.
               </p>
             </div>
@@ -237,14 +237,14 @@ export default function Home() {
       </section>
 
       {/* Shop by Category Section */}
-      <section className="py-20 bg-coconut-50 relative">
+      <section className="py-20 bg-beige-200 relative canvas-texture">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <span className="text-clay-700 font-semibold uppercase tracking-wider text-sm">Explore Collections</span>
-            <h2 className="text-5xl font-extrabold text-gradient-warm mt-2 mb-4">
+            <span className="text-black font-semibold uppercase tracking-wider text-sm">Explore Collections</span>
+            <h2 className="text-5xl font-extrabold text-black mt-2 mb-4">
               Shop by Category
             </h2>
-            <p className="text-coconut-800 text-lg max-w-2xl mx-auto">
+            <p className="text-black-light text-lg max-w-2xl mx-auto">
               Browse our carefully curated collections of traditional Sri Lankan handicrafts
             </p>
           </div>
@@ -253,7 +253,7 @@ export default function Home() {
             {categories.map((category, index) => (
               <Link key={category.name} href={category.href}>
                 <div
-                  className="group relative rounded-2xl overflow-hidden shadow-artisan-lg hover:shadow-artisan-xl transition-all duration-500 border border-clay-300 hover:border-clay-500 card-hover-lift"
+                  className="group relative rounded-2xl overflow-hidden shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-500 border-2 border-black hover:border-black-lighter card-hover-lift"
                   style={{animationDelay: `${index * 100}ms`}}
                 >
                   <div className="relative h-80 overflow-hidden">
@@ -262,21 +262,21 @@ export default function Home() {
                       alt={category.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-clay-900/95 via-wood-800/70 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
 
                     {/* Content overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-end p-6 text-center">
                       <h3 className="text-3xl font-extrabold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
                         {category.name}
                       </h3>
-                      <p className="text-coconut-100 text-sm font-medium mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-md">
+                      <p className="text-beige-200 text-sm font-medium mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-md">
                         {category.description}
                       </p>
-                      <div className="w-16 h-1 bg-saffron-500 rounded-full group-hover:w-24 transition-all duration-300"></div>
+                      <div className="w-16 h-1 bg-beige-300 rounded-full group-hover:w-24 transition-all duration-300"></div>
                     </div>
 
                     {/* Corner decoration */}
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-saffron-500/30 to-transparent rounded-bl-3xl"></div>
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-beige-300/30 to-transparent rounded-bl-3xl"></div>
                   </div>
                 </div>
               </Link>
@@ -286,15 +286,15 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-clay-100 to-coconut-100 relative overflow-hidden">
-        <div className="absolute inset-0 pattern-vintage opacity-20"></div>
+      <section className="py-20 bg-white relative overflow-hidden canvas-texture">
+        <div className="absolute inset-0 pattern-vintage opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <span className="text-clay-700 font-semibold uppercase tracking-wider text-sm">Happy Customers</span>
-            <h2 className="text-5xl font-extrabold text-gradient-clay mt-2 mb-4">
+            <span className="text-black font-semibold uppercase tracking-wider text-sm">Happy Customers</span>
+            <h2 className="text-5xl font-extrabold text-black mt-2 mb-4">
               Love from Around the World
             </h2>
-            <p className="text-coconut-800 text-lg max-w-2xl mx-auto">
+            <p className="text-black-light text-lg max-w-2xl mx-auto">
               See what our customers say about their Ceylon Crafts experience
             </p>
           </div>
@@ -303,33 +303,33 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-coconut-50 p-8 rounded-2xl shadow-artisan-lg hover:shadow-artisan-xl transition-all duration-300 border border-clay-300 hover:border-clay-500 group relative overflow-hidden"
+                className="bg-beige-100 p-8 rounded-2xl shadow-handmade-lg hover:shadow-handmade-xl transition-all duration-300 border-2 border-black hover:border-black-lighter group relative overflow-hidden"
               >
                 {/* Decorative quote mark */}
-                <div className="absolute top-4 right-4 text-8xl text-clay-100 font-serif leading-none">"</div>
+                <div className="absolute top-4 right-4 text-8xl text-beige-300 font-serif leading-none">"</div>
 
                 <div className="relative z-10">
                   <div className="flex justify-center mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
                         key={i}
-                        className="h-6 w-6 text-saffron-600 group-hover:scale-110 transition-transform"
+                        className="h-6 w-6 text-black group-hover:scale-110 transition-transform"
                         fill="currentColor"
                         style={{transitionDelay: `${i * 50}ms`}}
                       />
                     ))}
                   </div>
 
-                  <p className="text-coconut-900 text-lg leading-relaxed mb-6 italic">
+                  <p className="text-black text-lg leading-relaxed mb-6 italic">
                     "{testimonial.quote}"
                   </p>
 
                   <div className="flex items-center justify-end">
                     <div className="text-right">
-                      <p className="font-bold text-clay-800 text-lg">
+                      <p className="font-bold text-black text-lg">
                         {testimonial.author}
                       </p>
-                      <div className="w-12 h-1 bg-gradient-to-r from-transparent to-clay-600 ml-auto mt-1"></div>
+                      <div className="w-12 h-1 bg-black ml-auto mt-1"></div>
                     </div>
                   </div>
                 </div>
